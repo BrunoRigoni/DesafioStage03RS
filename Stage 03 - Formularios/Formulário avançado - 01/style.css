@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    padding: 0 ; 
+    margin: 0;
+}
+
+body {
+  background: #BFD7E4;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body::before {
+  content: ''; 
+  background: rgb(41,50,65);
+  height: 465px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+
+
+}
+#page {
+    width: 750px;
+    margin: auto;
+  
+}
+h1, legend {
+  font-family: 'Staatliches', cursive;
+  width: 100%;
+}
+span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+header  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+}
+header h1 {
+  margin-top: 107px;
+  font-size: 36px;
+  line-height: normal;
+  padding-bottom: 0;
+  }
+header p {
+  font-size: 16px;
+  line-height: normal;
+
+  padding-top: 0 ;
+  height: 46px;
+  margin-bottom: 0;
+    
+}
+header img {
+  margin-bottom: 32px;
+
+}
+form {
+  border-radius: 20px 20px 20px 20px;
+  background: #fff;
+  width: 750px;
+  min-height: 600px;
+
+}
+fieldset {
+  border: none;
+}
+legend {
+  border-bottom: 1px solid #E6E6F0;
+  color: #253B51;
+
+  font-family: 'Staatliches';
+
+  margin: 32px auto 33px;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+}
+
+
+.fsheader {
+height: 135px;
+background: #F67669;
+border: none;
+border-radius: 20px 20px 0px 0px ;
+text-align: center;
+padding: 50px 275px;
+color: #fff;
+font-family: 'Staatliches', cursive;
+line-height: 34px;
+font-size: 24px;
+}
+
+.form-page {
+  padding: 32px 64px 64px;
+  margin-bottom: 400px;
+
+   
+} 
+
+.form-page label {
+  line-height: 24px;
+  font-size: 14px;
+  color: #4E4958;
+  margin-top: 0px;
+
+}
+
+
+input, select, textarea {
+  height: 55px;
+  border-radius: 8px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  padding: 10px 20px;
+  margin-top: 8px;
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+span:hover {
+  color: #767081;
+}
+
+.info-pessoal {
+  display:flex;
+  flex-direction: column;
+}
+
+.info-pessoal input {
+  width: 100%;
+  margin-bottom: 0;
+   
+}
+
+.box-nome {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  margin-top: 0;
+}
+.box-nome input {
+  width: 300px;
+  margin-bottom: 16px;
+  
+}
+
+
+.caixa-mentor {
+display: flex ;
+flex-direction: column;
+
+}
+.caixa-mentor select {
+width: 300px;
+border: 1px solid #E6E6F0;
+background: #FAFAFC;
+border-radius: 8px;
+appearance: none;
+margin-bottom: 32px;
+}
+
+.caixa-mentor select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1.64984L5 5.61617L9 1.64984' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.info-mentor textarea {
+ height: 166px;
+}
+
+.caixa-checkbox {
+  font-size: 14px;
+  font-family: 'Poppins';
+  line-height: 24px;
+  font-weight: 400;
+  color: #4E4958;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;  
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.caixa-checkbox label {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+
+}
+
+.caixa-checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  z-index: -2;
+}
+.caixa-checkbox label::before {
+  content:'';
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e6e6f0;
+  border-radius:8px ;
+  align-items: center;
+}
+.caixa-checkbox input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2323_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2323_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  
+}
+
+.caixa-checkbox input:focus + label::before{
+  outline: 2px solid black;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+
+}
+.data input {
+  width: 300px;
+  margin: 0 32px 0 0;
+}
+.data label {
+  margin-bottom: 8px;
+}
+
+.caixa-agendamento {
+  display: flex;
+  
+  
+}
+.hora {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  
+  
+
+}
+.hora input {
+  width: 140px;
+  
+}
+
+.save {
+  margin: 64px 0 0;
+  width: 100%;
+  height: 51px;
+  border:none;
+  border-radius: 8px;
+  background: #F67669;
+  color: white;
+  line-height: 26px;
+  font-size: 20px;
+}
